@@ -3,9 +3,9 @@ import bcrypt
 
 
 def validate(password):
-    hash = b'$2b$12$zHXl32aL20iFa6HYSubn4Ogvrjj6BYl1AX4nb7CnI63ieBaLe67Wm'
+    hashed = b'$2b$12$zHXl32aL20iFa6HYSubn4Ogvrjj6BYl1AX4nb7CnI63ieBaLe67Wm'
     password = bytes(password, encoding='utf-8')
-    if bcrypt.checkpw(password, hash):
+    if bcrypt.checkpw(password, hashed):
         print("Log in successful")
     else:
         print("Invalid password")
