@@ -1,6 +1,12 @@
 from tkinter import *
 import bcrypt
 
+
+def validate(password):
+    hash = b'$2b$12$zHXl32aL20iFa6HYSubn4Ogvrjj6BYl1AX4nb7CnI63ieBaLe67Wm'
+
+
+
 root = Tk()
 root.geometry('300x300')
 
