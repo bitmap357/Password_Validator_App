@@ -4,6 +4,8 @@ import bcrypt
 
 def validate(password):
     hash = b'$2b$12$zHXl32aL20iFa6HYSubn4Ogvrjj6BYl1AX4nb7CnI63ieBaLe67Wm'
+    password = bytes(password, encoding='utf-8')
+
 
 
 
